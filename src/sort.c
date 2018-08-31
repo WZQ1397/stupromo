@@ -9,7 +9,7 @@ void quicksort(int* a, int p,int q)
     
     while(i < j)
     {
-        // Խ����С�ڻ�׼ֵ������ 
+        // 越过不小于基准值的数据 
         while( a[j] >= temp && j > i ) j--;
         
         if( j > i )
@@ -17,7 +17,7 @@ void quicksort(int* a, int p,int q)
             a[i] = a[j];
             i++;
             
-            // Խ��С�ڻ�׼ֵ������ 
+            // 越过小于基准值的数据 
             while(a[i] <= temp && i < j )  i++;
             if( i < j )
             {
@@ -42,3 +42,5 @@ void quicksort(int* a, int p,int q)
     if( p < (i-1)) quicksort(a,p,i-1);
     if((j+1) < q ) quicksort(a,j+1,q);    
 }
+
+#（V ÷（V+M））× R +（M ÷（V+M））× C 其中，WR 加权得分，V 成绩总次数，M 最小有效成绩次数 ，C 平均分
